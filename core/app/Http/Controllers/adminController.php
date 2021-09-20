@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Schema;
 // use Illuminate\Support\Facades\File;
 
 use DotenvEditor;
-
+use App\Mail\MailSend;
 use App\states;
 use App\country;
 use Session;
@@ -1046,6 +1046,45 @@ class adminController extends Controller
 
                     $msg->save();
 
+                    $strusers = str_replace(" ", "", $req->input('msg_users'));
+                    $lst = explode(",", $strusers);
+
+                    $users = User::get();
+                    foreach ($users as $key => $value) {
+                        $exist = false;
+                        foreach($lst as $val) {
+                            if($val == $value->username) {
+                                $exist = true;
+                                break;
+                            }
+                        }
+                        if($exist == false) continue;
+                        $data = [
+                            'subject' => $msg->subject,
+                            'email' => $value->email,
+                            'content' => "asdfasdf"
+                        ];
+
+                          Mail::send('mail.send', $data, function($message) use ($data) {
+                            $message->to($data['email'])
+                            ->subject($data['subject']);
+                          });
+                    }
+                    // $u = "lexobi1194@u461.com"; // please your email
+
+// please execute this section.
+                    // Mail::to($u)->send(new MailSend($msg->message, $msg->subject));
+                    // $getudata =  users = $req->input('msg_users') . ';';
+
+                    // $maildata = ['email' => $getudata->email, 'username' => $getudata->username];
+
+                // Mail::send('mail.admin_tickect_msg', ['md' => $maildata], function ($msg) use ($maildata) {
+                //     $msg->from(env('MAIL_USERNAME'), env('APP_NAME'));
+                //     $msg->to($maildata['email']);
+                //     $msg->subject(__('messages.ticket_msg'));
+                // });
+
+
                     $act = new adminLog;
                     $act->admin = $adm->email;
                     $act->action =  __('messages.adm_snt_notf');
@@ -1576,7 +1615,7 @@ class adminController extends Controller
                         'key'     => 'COINBASE_WEBHOOK_SECRETE',
                         'value'   => $req->input('coinbase_seceret')
                     ],
-                    
+
                     /////////////// Blockchain ////////////////////////////////////////////////////////////////////
                     [
                         'key'     => 'BC_SWITCH',
@@ -1962,14 +2001,14 @@ class adminController extends Controller
                 $lang = new lang;
                 $lang->lang_name = ucfirst($req['lang_name']);
                 $lang->lang_code = strtolower($req['lang_code']);
-                
+
                 $path = base_path().'/resources/lang/'.$req['lang_code'];
 
-                if(!File::exists($path)) 
+                if(!File::exists($path))
                 {
                     File::makeDirectory($path, 0777, true);
                 }
-                                                
+
                 File::copy(base_path().'/resources/lang/en/messages.php', $path.'/messages.php');
 
                 $lang->save();

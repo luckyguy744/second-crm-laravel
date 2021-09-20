@@ -36,4 +36,31 @@
 
 <script type="text/javascript">
   $('#msg_state').val(0);
+
+  const insert_template = () => {
+      const html = `
+      <table style="border-collapse: collapse; width: 100%;" border="0">
+        <tbody>
+            <tr>
+                <td style="width: 9.09969%;"><img src="/img/logo.png" width="124" height="124" /></td>
+                <td style="width: 88.9494%;">CompanyName<br />AddressLine1<br />AddressLine2<br />AddressLine3</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <table style="border-collapse: collapse; width: 100%;" border="0">
+        <tbody>
+            <tr>
+                <td style="width: 48.9904%;">&nbsp;</td>
+                <td style="width: 49.0587%;"></td>
+            </tr>
+        </tbody>
+    </table>
+    <p align="left">&nbsp;</p>
+`;
+    tinyMCE.activeEditor.setContent(html);
+}
 </script>
