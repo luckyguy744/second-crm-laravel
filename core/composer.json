@@ -1,0 +1,81 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2.25",
+        "bacon/bacon-qr-code": "~1.0.3",
+        "cartalyst/stripe-laravel": "11.*",
+        "coinbase/coinbase-commerce": "^1.0",
+        "fideloper/proxy": "^4.0",
+        "guzzlehttp/guzzle": "^6.5",
+        "jackiedo/dotenv-editor": "1.*",
+        "kevupton/laravel-coinpayments": "^1.1",
+        "laravel/framework": "^6.0",
+        "laravel/tinker": "^1.0",
+        "nesbot/carbon": "^2.36",
+        "paypal/rest-api-sdk-php": "^1.14",
+        "pragmarx/google2fa-laravel": "^1.3",
+        "stripe/stripe-php": "^7.25",
+        "unicodeveloper/laravel-paystack": "^1.0",
+        "yarcode/yii2-payeer": "~1.0"
+    },
+    "require-dev": {
+        "beyondcode/laravel-dump-server": "^1.0",
+        "filp/whoops": "^2.0",
+        "fzaninotto/faker": "^1.4",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^2.0",
+        "phpunit/phpunit": "^7.5",
+        "mashape/unirest-php": ">= 3.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "ZaLaravel\\LaravelPayeer\\": "app/src/ZaLaravel/LaravelPayeer"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "files": [
+            "app/Http/Helpers/helpers.php",
+            "vendor/baselock/baselock.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+   
+}

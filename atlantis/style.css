@@ -1,0 +1,1062 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Adminpro Admin Template
+    Template URI: http://SRTtheme.com/
+    Description: Adminpro is a responsive admin template based on the famous Bootstrap framework, made it with love in every backend, with tons of beautiful features ready to use.
+    Author: SRTtheme
+    Author URI: http://SRTtheme.com/
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+	2. Header Customize CSS
+	3. Header top Menu CSS
+	4. Main Menu CSS
+	5. Tinymce CSS
+	6. Breadcome CSS
+
+-----------------------------------------------------------------------------------*/
+
+.font_10{
+	font-size: 10px;
+}
+
+.font_14{
+	font-size: 14px;
+}
+
+.pad_top_0{
+	padding-top: 0px;
+}
+
+.pad_0{
+	padding: 0px;
+}
+
+.mg_top_30{
+	margin-top: 30px;
+}
+
+.margin_top_n10{
+	margin-top: -10px;
+}
+.margin_top_n12{
+	margin-top: -12px;
+}
+
+.margin_top_n32{
+	margin-top: -32px;
+}
+
+.border_btm_1{
+	border-bottom: 1px solid #CCC;
+}
+
+.pad_top_20{
+	padding-top: 20px;
+}
+
+.border_none{
+	border:none;
+}
+
+.with_50per{
+	width: 50%;
+}
+
+.with_100per{
+	width: 100%;
+}
+
+.height_50{
+	height: 50px;
+}
+.pad_btm_40{
+	padding-bottom: 40px;
+}
+
+.pad_20{
+	padding: 20px;
+}
+
+.bg_ash{
+	background-color: #CCC;
+}
+
+.position_relative{
+	position: relative;
+}
+
+.position_abs{
+	position: absolute;
+}
+
+.position_fixed{
+	position: fixed;
+}
+
+.font_20{
+	font-size: 20px;
+}
+.color_blue_b{
+	color:#039;
+}
+
+.margin_top_10{
+	margin-top: 10px;
+}
+
+.input_height_45{
+	height: 45px;
+}
+.cont_overflow_hidden{
+	overflow: hidden;
+}
+
+.cont_display_none{
+	display: none;
+}
+
+.pad_top_30{
+	margin-top: 30px;
+}
+.pad_top_5{
+	padding-top: 5px;
+}
+
+.u_case{
+	text-transform: uppercase;
+}
+
+.color_blue_9{
+	color: #059;
+}
+
+.text-grey{
+    color: #CCCCCC;
+}
+
+
+.form_cont{
+	overflow: hidden; overflow-y: auto; height: 500px; padding: 10px; 
+}
+.bg_white{
+	background-color: #FFF !important;
+}
+.login_logo{
+	border-radius:50%; height: 70px;
+}
+.logo_cont{
+	margin-top: 25%; color: #FFF; position: absolute; top: 0px, left:0px; width: 100%; height: 100%;
+}
+.ploading{
+	min-width: 100%; background-color: rgba(0,0,0,.6); position: fixed; top: 0; left: 0; bottom: 0; width: 100%; z-index: 20; display: none;
+}
+.ploading_img_cont{
+	margin-top: 25%; color: #FFF;
+}
+.ploading_img{
+	height: 30px; width: 30px;
+}
+
+.login_row_cont{
+	width: 100%; background-color: #FFF;  margin: 0px;
+}
+
+.position_relative{
+	position: relative;
+}
+
+button{
+	cursor: pointer !important;
+}
+
+.btn_prepend{
+	cursor: pointer !important;
+}
+
+.blur_cnt{
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);	
+}
+
+.fixedOeverlayBG{
+	position: fixed; left: 0px; top: 0px; height:100%; width: 100%; background-color: rgba(20, 20, 100, .8);
+}
+
+.fixedOverlayIMG{
+	position: fixed; left:0px; top: 0px; height: 100%; width: 100%; opacity: .4;
+}
+
+.login_fixed_panel{
+	background-color:#FFF; position: fixed; height: 100%; right: 0; top: 0; width: 50%; padding: 30px; 
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0c7;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+.floating_lang_div{
+    z-index: 1000; position: absolute; bottom: 1px; left: 0px; z-index: 1000; color: #FFF; font-size:14px; width: 80px; height: 20px;
+}
+
+.lang_select_input{
+	background-color: #2B7FEA; color: #FFF;
+}
+
+.popup_alert_suc{
+    position: fixed; bottom: 100px; right: 0px; display: none; z-index: 1000;
+    background-color: #0f8461; color: #FFF; font-size:14px;
+}
+
+.popup_alert_err{
+    position: fixed; bottom: 100px; right: 0px; display: none; z-index: 1000; 
+    background-color: #e50; color: #FFF; font-size:14px;
+}
+
+.disabled_input{
+	background-color: #FFF !important; 
+	height: 30px; border-radius: 4px;
+	border: 1px solid #CCC;
+}
+
+.user-plus{
+	padding: 15px 0px; color: #FFF;
+}
+.user-plus > a{
+	color: #FFF;
+}
+
+.margin_top50{
+	margin-top: 50px;
+}
+
+.color_picker{
+	height: 30px; width: 100%; cursor: pointer;
+}
+
+
+
+@media (max-width: 600px) 
+{
+	.mobile_table{
+		display: block;
+	}
+	.web-table{
+		display: none;
+	}
+	.popmsg-mobile{		
+		margin: 20% 6% 3% 1%;
+		border-radius: 7px; background-color: #FFF; min-height: 200px;
+	}
+	.bg-palet{
+	    display:none;
+	}
+	
+	.act_sum_mob{
+	    margin-top: 90px;
+	    margin-bottom: 150px;
+	}
+
+	.login_fixed_panel{
+		background-color:#FFF; position: fixed; height: 100%; right: 0; top: 0; width: 100%; padding: 30px; 
+	}
+	
+}
+
+@media screen and (max-width: 995px) 
+{
+	.bg-palet{
+	    display:none;
+	}
+	
+	.act_sum_mob{
+	    padding-top: 100px;
+	    margin-bottom: 150px;
+	}
+	
+}
+
+@media (min-width: 601px ) 
+{
+	.mobile_table{
+		display: none;
+	}
+	.popmsg-mobile{
+		margin: 10% 6% 3% 1%;
+	}	
+
+	
+}
+
+.xpack_inv{
+    margin-top: 20px; padding-top: 0px; font-size: 14px; 
+    border-top-left-radius: 20px; border-top-right-radius: 0px;  
+    border-bottom-right-radius: 20px;  border-bottom-left-radius: 0px;
+    background-color:#215; color:#FFF;
+}
+
+.regTxtBox{
+	height: 45px; border: 1px solid #CCF !important; padding:10px; border-radius: 0px;
+	width: 100%;
+}
+
+.span_bg{
+	background-color: #1F2E86 !important;
+	color:#fff !important;
+}
+
+.payment_method{
+	border-radius: 7px; border: 1px solid #CCC; padding: 50px 100px;
+}
+.payment_method:hover{
+	box-shadow: -1px 1px 5px 3px #CCC;
+}
+
+.paymentForm{
+	 border-radius: 7px; margin-top: 10px; background-color: #FFF; border: 1px solid #CCC;
+}
+
+.profile-sum{
+	background-color: #cec; border-radius: 5px; padding: 10px; 
+}
+
+.profile-sum-cont{
+	padding: 5px;  margin-top:-20px; background-color: #0a8; color: #FFF; width: 50%;
+}
+
+.btn_form{
+    padding: 8px 15px;
+}
+
+
+.popmsgContainer 
+{
+	min-width: 100%; background-color: rgba(0,0,0,.6); 
+	position: fixed;  bottom: 0px; left:0px; height:100%;
+	z-index: 1000; display: none;
+}
+
+.popmsgContainerDisplay 
+{
+	min-width: 100%; background-color: rgba(0,0,0,.6); 
+	position: fixed;  bottom: 0px; left:0px; height:100%;
+	z-index: 1000;
+}
+
+
+.scroll {   
+   overflow: auto;
+   scrollbar-width: thin;
+   scrollbar-color: #CCC rgba(0,0,0,0.3);
+}
+
+.scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 8px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.popup_alert{
+    position: fixed; bottom: 0px; right: 0; display: none; z-index: 10; width: 80%;
+}
+
+.camshow{
+    height: 150px; width: 150px; 
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    left: 25%; right:25%;
+    list-height: 10px;
+}
+
+.txt_transform{
+    text-transform: uppercase;
+    padding: 0px;
+
+}
+
+.btn{
+	padding: 5px 15px !important;
+}
+
+::webkit-scrollbar{
+	width: 10px;
+}
+::webkit-scrollbar-track{
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 5px;
+}
+::webkit-scrollbar-thumb{
+	background-color: #ccc;
+	border-radius:5px;
+}
+
+a{
+	text-decoration: none !important; 
+}
+
+.headtext_blue{
+	color: #0B51AC;
+}
+
+.not_cont{
+	position: relative;
+}
+
+.new_not{
+	color:red; position: absolute;
+	font-size: 10px !important;
+	margin-left: -25px;
+	margin-top: 0px;
+
+}
+
+.msg_not_icon{
+	padding: 4px 0px 0px 8px; background-color: #CCC; border-radius: 50%; height: 30px; width: 30px;
+
+}
+
+.pk_num{
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.time{
+	color: #999; font-size: 11px;
+}
+
+.pack-container{	
+	border-radius: 10px;
+	border:1px solid #CCC;	
+}
+
+.pack-container > .panel-head{	
+	color: #FFF;
+	padding:15px; 
+	background-color: #1269DB; 
+	border-bottom: 1px solid #CCC;
+}
+
+.foot{
+	padding: 20px; background-color: #fff;
+	border-top: 1px solid #EEE;
+}
+
+
+.clear{clear:both}
+@font-face {
+  font-family: 'adminpro-icon';
+  src:
+    url('fonts/adminpro-icon.ttf?4gzvyg') format('truetype'),
+    url('fonts/adminpro-icon.woff?4gzvyg') format('woff'),
+    url('fonts/adminpro-icon.svg?4gzvyg#adminpro-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.reg_form_scroll{
+	overflow: hidden !important; overflow-y: auto !important; height: 400px !important;
+}
+
+/*************** verify form *****************************/
+.verify_form_cont{
+	position: relative; background-color: transparent;
+}
+.very_form_div{
+	color:; background-color:#FFF; border-radius:5px; padding: 15px;
+}
+.pad_T90{
+	padding-top: 90px;
+}
+
+.dep_pop{
+	min-width: 100%; background-color: rgba(0,0,0,.6); position: fixed; top: 0; left: 0; bottom: 0; width: 100%; z-index: 20; display: none;
+}
+.pad_5p2p{
+	padding: 5% 2%;
+}
+
+.pop_cont{
+	margin: 3% 6% 3% 1%; border-radius: 7px; min-height: 200px;
+}
+
+.pop_img_h{
+	height: 500px;
+}
+
+.btn_blue{
+	background-color: #1269DB; color: #FFF;
+}
+.btn_blue:hover{
+	color: #EEE;
+}
+
+/*************** message *****************/
+.msg_cont_bg{
+	background-color: #fff; 
+}
+
+.msg_col_pad{
+	padding:0px;
+}
+
+.msg_nf{
+	background-color: #fff; height: 600px; box-shadow: none;
+}
+
+.margin_btm_0{
+	margin-bottom: 0px;
+}
+
+.nf_line{
+	padding: 10px 0px; border-bottom: 1px dotted #CCC;
+}
+.msg_listing{
+	overflow: hidden; padding-left: 10px !important;
+}
+.display_not{
+	display: none;
+}
+.read_panel{
+	padding-left: 2px; border-left: 1px solid #CCC;
+}
+
+.read_panel_h{
+	overflow-y: auto; box-shadow: none; height: 664px; padding: 0px;
+}
+
+/******************************* paypal *****************************/
+.paypal_box{
+	background-color: #EEE; padding: 60px 10px;
+}
+
+/****************************** Profile ******************************/
+.avatar_img{
+	height: 100px; width: 100px; border-radius: 50%;
+}
+
+.pad_top10{
+	margin-top: 10px;
+}
+
+
+/************************** stripe ************************************/
+.panel-title {
+    display: inline;
+
+    font-weight: bold;
+}
+.display-table {
+    display: table;
+}
+.display-tr {
+    display: table-row;
+}
+.display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 61%;
+}
+
+.stripe_bg{
+	background-color: #EEE; padding: 60px 10px;
+}
+
+/******************** act sumary file *********************/
+.act_bg{
+	background-color: #08C; min-height:400px;
+}
+.wd_pop{
+	height: 20px; margin-top:-130px;
+}
+.wd_row_pad{
+	padding: 5% 2%;
+}
+
+.border_btm{
+	border-bottom: 1px solid #CCC;
+}
+
+.font_11{
+	font-size: 11px;
+}
+.margin_n10{
+	font-size: 10px; margin-top: -10px;
+}
+.padding_per_2_2{
+	padding: 2% 2%;
+}
+
+
+/***************** Alert file **********************/
+.pop_msg_col{
+	border-radius: 7px; background-color: #FFF; min-height: 200px;
+}
+.pop_msg_contnt{
+	margin-top: -30px; padding: 15px;
+}
+
+.pop_read_msg{
+	background-color: #FFF; padding:0px; margin-top: 0px; border-radius:6px;
+}
+
+.pop_read_msg > span{
+	float: right; margin-top: -40px; margin-right: 0px; z-index: 10; 
+}
+
+.pop_scroll_height{
+	padding: 15px; height:540px;
+}
+
+/************************ confirm blade ****************************/
+
+.pop_invest_cont{
+	min-width: 100%; background-color: rgba(0,0,0,.6); 
+	position: fixed; top: 0; left: 0; 
+	bottom: 0; width: 100%; z-index: 1000; display: none;
+}
+
+.pop_invest_col{
+	margin: 2.5% 6% 3% 1%; border-radius: 7px; background-color: #FFF; min-height: 200px;
+}
+
+.pop_form_min_max{
+	color: #d42; border: 1px solid #eee; padding: 10px 2px;
+}
+
+/******************************** message blade *********************************/
+
+.msg_alert_box{
+	border-bottom: 1px solid #CCC;   padding: 2px 10px;
+}
+.msg_fa_envelope_read{
+	color: #777; font-size: 12px; margin-top: 20px;
+}
+
+.msg_fa_evelope_unread{
+	color: red; font-size: 12px; margin-top: 20px;
+}
+
+
+/************************ Mobile investment table **********************************/
+.inv_alert_cont{
+	margin-top: 10px; padding-top: 0px; font-size: 14px;
+}
+
+.inv_alert_top_row{
+	background-color: #059; color: #FFF; 0px; border-top-left-radius: 3px; border-top-right-radius: 3px;
+}
+
+/************************  header **********************************/
+
+.header_logo{
+	height: 30px; width: 30px; z-index: 1; border-radius:50%;
+}
+
+
+/******************************** Admin css **************************/
+.card_header_bg_blue{
+	background-color: #127aff;
+}
+
+.edit_pack_cont{
+	min-width: 100%; background-color: rgba(0,0,0,.6); 
+	position: fixed; top: 0; left: 0; bottom: 0; 
+	width: 100%; z-index: 1000; display: none;
+}
+
+.edit_pack_col{
+	margin: 3% 6% 3% 1%; border-radius: 7px; background-color: #FFF; min-height: 200px;
+}
+
+.edit_pack_pad_n30_5{
+	margin-top: -30px; padding: 5px;
+}
+
+.inc_msg_alert_row{
+	border-bottom: 1px solid #CCC;   padding: 2px;
+}
+
+.search_btn_append{
+	border:none; padding: 0px 15px;
+}
+
+.admin_stat_legend{
+	color: #FFF; background-color: #1269DB; padding: 5px;
+}
+
+.admin_login_row{
+	width: 100%; background-color: #FFF;  margin: 0px;
+}
+
+.admin_login_title{
+	margin-top: 25%; color: #FFF; position: absolute; top: 0px, left:0px; width: 100%; height: 100%;
+}
+
+.admin_usr_img_size{
+	height: 120px; width: 100px;
+}
+
+.admin_settings_input{
+	height: 30px; border-radius: 1px; margin-bottom: 10px;
+}
+
+.admin_usr_inv_row{
+	background-color: #059; color: #FFF; 0px; border-top-left-radius: 3px; border-top-right-radius: 3px;
+}
+
+.chat_msg{
+	position: absolute; width: 80%; top: 30px; left:10%; border-radius: 75px;
+}
+.chat_container{
+	background-color: #F5F5F9; border: 1px solid #DDD;
+	background-image: url('/img/chat_bg.jpg');
+}
+.chat_msg_container{
+	height: 500px;  margin-top: 80px;
+}
+
+.chat_bubble{
+	max-width: 80%;
+	min-width: 45%;
+	border-radius: 10px;
+}
+
+.msg_entry{
+	height: 30px; font-size: 13px;
+}
+.with_100{
+	min-width: 100%;
+}
+
+.avatar_chat{
+	height: 30px; width: 30px;
+}
+
+/*========================== chat bubbles================================*/
+
+.talk-bubble {
+	margin: 10px;
+  display: inline-block;
+  position: relative;
+	max-width: 70%;
+	min-width: 40%;
+	height: auto;
+	background-color: lightyellow;
+}
+.border{
+  border: 8px solid #666;
+}
+.round{
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+
+}
+
+/* Right triangle placed top left flush. */
+.tri-right.border.left-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 0px;
+	bottom: auto;
+	border: 22px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+/* Right triangle, left side slightly down */
+.tri-right.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -8px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 32px solid;
+	border-color: transparent transparent transparent #666;
+}
+.tri-right.btm-left:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 22px solid;
+	border-color: transparent transparent transparent lightyellow;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 38px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow transparent transparent lightyellow;
+}
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 30px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 38px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -8px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 0px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+
+/* Right triangle, right side slightly down*/
+.tri-right.border.right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow transparent transparent lightyellow;
+}
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 0px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+/* talk bubble contents */
+.talktext{
+  padding: 1em;
+	text-align: left;
+  line-height: 1.5em;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+.qr_code_img{
+	height: 200px; width: 200px;
+}
+
+.btn_grey{
+	background-color: #999;
+}
+
+.width_100per{
+	min-width: 100%; 
+}
+
+.img_card_temp{
+	height: 120px; width: 200px;
+}
+
+.boldh{
+    font-weight: bold !important;
+}
+
+.p_loading{
+	min-width: 100%; background-color: rgba(0,0,0,.6); position: fixed; top: 0; left: 0; bottom: 0; width: 100%; z-index: 1000; display: none;
+}
